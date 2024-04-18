@@ -12,10 +12,13 @@ import {RouterLink, RouterOutlet} from '@angular/router';
       <li><a routerLink="if-else">&#64;sytax If Else</a></li>
       <li><a routerLink="switch">&#64;sytax Switch</a></li>
     </ul>
+    <ul>
+      <li><a routerLink="not-auth">New Guard Functions</a></li>
+    </ul>
     <router-outlet />
   `,
   styles: [],
 })
 export class AppComponent {
-  title = 'ng-new-features-1';
+  title = 'ng-new-features';
 }
