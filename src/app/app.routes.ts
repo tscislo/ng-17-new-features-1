@@ -5,6 +5,7 @@ import {SwitchComponent} from "./switch/switch.component";
 import {NotAuthComponent} from "./not-auth/not-auth.component";
 import {isEnabledGuard} from "./is-enabled.guard";
 import {StandaloneComponent} from "./standalone/standalone/standalone.component";
+import {TakeUntilDestroyedComponent} from "./take-until-destroyed/take-until-destroyed.component";
 
 export const routes: Routes = [
     {
@@ -31,5 +32,9 @@ export const routes: Routes = [
     {
         loadChildren: () => import('./not-standalone/not-standalone.module').then(m => m.NotStandaloneModule),
         path: 'not-standalone'
+    },
+    {
+        component: TakeUntilDestroyedComponent,
+        path: 'take-until-destroyed'
     }
 ];

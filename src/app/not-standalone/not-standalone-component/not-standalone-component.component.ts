@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   template: `
     <p>
       not-standalone-component works!
-      <app-standalone></app-standalone>
+      <app-standalone /> <!-- Self closing tags used to insert component -->
     </p>
   `,
   styles: ``

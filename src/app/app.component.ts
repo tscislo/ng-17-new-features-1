@@ -19,6 +19,9 @@ import {RouterLink, RouterOutlet} from '@angular/router';
       <li><a routerLink="standalone">Standalone</a></li>
       <li><a routerLink="not-standalone">Not Standalone</a></li>
     </ul>
+    <ul>
+      <li><a routerLink="take-until-destroyed">takeUntilDestroyed</a></li>
+    </ul>
     <router-outlet />
   `,
   styles: [],
