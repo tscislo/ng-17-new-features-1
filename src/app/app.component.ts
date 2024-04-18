@@ -15,6 +15,10 @@ import {RouterLink, RouterOutlet} from '@angular/router';
     <ul>
       <li><a routerLink="not-auth">New Guard Functions</a></li>
     </ul>
+    <ul>
+      <li><a routerLink="standalone">Standalone</a></li>
+      <li><a routerLink="not-standalone">Not Standalone</a></li>
+    </ul>
     <router-outlet />
   `,
   styles: [],

@@ -4,6 +4,7 @@ import {IfElseComponent} from "./if-else/if-else.component";
 import {SwitchComponent} from "./switch/switch.component";
 import {NotAuthComponent} from "./not-auth/not-auth.component";
 import {isEnabledGuard} from "./is-enabled.guard";
+import {StandaloneComponent} from "./standalone/standalone/standalone.component";
 
 export const routes: Routes = [
     {
@@ -22,5 +23,13 @@ export const routes: Routes = [
         component: NotAuthComponent,
         path: 'not-auth',
         canActivate: [isEnabledGuard]
+    },
+    {
+        component: StandaloneComponent,
+        path: 'standalone'
+    },
+    {
+        loadChildren: () => import('./not-standalone/not-standalone.module').then(m => m.NotStandaloneModule),
+        path: 'not-standalone'
     }
 ];
