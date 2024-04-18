@@ -6,6 +6,8 @@ import {NotAuthComponent} from "./not-auth/not-auth.component";
 import {isEnabledGuard} from "./is-enabled.guard";
 import {StandaloneComponent} from "./standalone/standalone/standalone.component";
 import {TakeUntilDestroyedComponent} from "./take-until-destroyed/take-until-destroyed.component";
+import {RequiredInputsComponent} from "./required-inputs/required-inputs.component";
+import {RoutableInputParametersComponent} from "./routable-input-parameters/routable-input-parameters.component";
 
 export const routes: Routes = [
     {
@@ -36,5 +38,13 @@ export const routes: Routes = [
     {
         component: TakeUntilDestroyedComponent,
         path: 'take-until-destroyed'
+    },
+    {
+        component: RequiredInputsComponent,
+        path: 'required-inputs'
+    },
+    {
+        component: RoutableInputParametersComponent,
+        path: 'routable-input-parameters/:id'
     }
 ];

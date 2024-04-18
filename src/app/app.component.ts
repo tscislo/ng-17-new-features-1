@@ -22,6 +22,12 @@ import {RouterLink, RouterOutlet} from '@angular/router';
     <ul>
       <li><a routerLink="take-until-destroyed">takeUntilDestroyed</a></li>
     </ul>
+    <ul>
+      <li><a routerLink="required-inputs">Required Inputs</a></li>
+      <li><a routerLink="routable-input-parameters/1">Routable Input parameters id = 1</a></li>
+      <li><a routerLink="routable-input-parameters/2">Routable Input parameters id = 2</a></li>
+      <li><a routerLink="routable-input-parameters/3">Routable Input parameters id = 3</a></li>
+    </ul>
     <router-outlet />
   `,
   styles: [],
