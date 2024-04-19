@@ -8,9 +8,9 @@ import {RouterLink, RouterOutlet} from '@angular/router';
   template: `
     <h1>Welcome to {{title}}!</h1>
     <ul>
-      <li><a routerLink="for-loop">&#64;sytax For Loop</a></li>
-      <li><a routerLink="if-else">&#64;sytax If Else</a></li>
-      <li><a routerLink="switch">&#64;sytax Switch</a></li>
+      <li><a routerLink="for-loop">&#64;syntax For Loop</a></li>
+      <li><a routerLink="if-else">&#64;syntax If Else</a></li>
+      <li><a routerLink="switch">&#64;syntax Switch</a></li>
     </ul>
     <ul>
       <li><a routerLink="not-auth">New Guard Functions</a></li>
