@@ -40,6 +40,7 @@ export class StandaloneComponent implements OnInit {
     private authService: AuthService = inject(AuthService);
 
     ngOnInit() {
+        // inject(AuthService); // this is runtime error
         console.log(this.authService.isAuthorized);
     }
 }

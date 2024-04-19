@@ -9,8 +9,8 @@ type Mode = 'edit' | 'view';
     imports: [CommonModule],
     template: `
         <button (click)="itemForSwitch.mode = itemForSwitch.mode === 'edit' ? 'view' : 'edit'">Toggle</button>
-        
-        
+
+
         @switch (itemForSwitch.mode) {
             @case ('edit') {
                 <p>
@@ -22,8 +22,13 @@ type Mode = 'edit' | 'view';
                     View mode
                 </p>
             }
+            @default {
+                <p>
+                    Default mode
+                </p>
+            }
         }
-        
+
         <ng-container [ngSwitch]="itemForSwitch.mode">
             <p *ngSwitchCase="'edit'">
                 Edit mode
@@ -31,8 +36,11 @@ type Mode = 'edit' | 'view';
             <p *ngSwitchCase="'view'">
                 View mode
             </p>
+            <p *ngSwitchDefault>
+                Default mode
+            </p>
         </ng-container>
-        
+
     `,
     styles: ``
 })

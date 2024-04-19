@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
-import {CommonModule} from "@angular/common";
+import {Component} from '@angular/core';
+import {NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-if-else',
   standalone: true,
-  imports: [CommonModule],
+  imports: [NgIf],
   template: `
       <p *ngIf="flag; else elseBlock">True block</p>
       <ng-template #elseBlock>
